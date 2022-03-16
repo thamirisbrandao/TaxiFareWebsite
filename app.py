@@ -23,7 +23,7 @@ pass_get = st.selectbox('Insert passenger count', list(range(1, 9)))
 def get_map_data():
 
     return pd.DataFrame(
-            np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+            np.random.randn(10, 2) / [50, 50] + [37.76, -122.4],
             columns=['lat', 'lon']
         )
 
